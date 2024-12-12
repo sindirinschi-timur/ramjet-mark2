@@ -1,0 +1,6 @@
+Flask
+mysql-connector
+PyMySQL
+geopy
+requests
+python-dotenv

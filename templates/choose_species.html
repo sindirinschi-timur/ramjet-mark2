@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Species</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body style="background-image: url('/static/images/species.jpg');">
+    <div class="container">
+    <div class="papyrus">
+      <div class="top-edge"></div>
+      <div class="content">
+        <h1>Choose Your Species</h1>
+        <form action="{{ url_for('main.choose_species') }}" method="post">
+            <label for="species">Select Species:</label>
+            <select id="species" name="species" required>
+                <option value="Shadow">Shadow</option>
+                <option value="Suede">Suede</option>
+            </select>
+            <button type="submit" onclick="store_species()">Confirm</button>
+        </form>
+        <p id="text"></p>
+      </div>
+      <div class="bottom-edge"></div>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

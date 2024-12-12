@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+  }
+  
+  .quest-panel {
+    position: fixed; 
+    top: 200px;
+    left: 100px;
+    width: 300px; 
+    padding: 15px;
+    background-color: #ffffff; 
+    border: 2px solid #a67c52; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    opacity: 80%;
+  }
+  
+  .quest-panel h1 {
+    font-size: 20px;
+    color: #4a3c29;
+  }
+  
+  .quest-panel p {
+    font-size: 14px;
+    color: #4a3c29;
+    margin: 5px 0;
+  }
+  
+  .quest-panel form {
+    margin-top: 15px;
+  }
+  
+  .quest-panel input[type="text"] {
+    width: calc(100% - 24px);;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #a67c52;
+    border-radius: 5px;
+  }
+  
+  .quest-panel button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d9c19a;
+    border: 2px solid #a67c52;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .quest-panel button:hover {
+    background-color: #c6ab86;
+  }
+  

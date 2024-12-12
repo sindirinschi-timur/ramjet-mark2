@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RamJet</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  
+</head>
+<body style="background-image: url('/static/images/startmap.png');">
+  <div class="container">
+    <div class="papyrus">
+      <div class="top-edge"></div>
+      <div class="content">
+        <h1>Welcome to RamJet</h1>
+        <form id="gameForm" action="{{ url_for('main.start_game') }}" method="post" onsubmit="return false;">
+          <label for="player_name">Enter your name:</label>
+          <input type="text" id="player_name" name="player_name" required>
+          <button type="button" onclick="startGame()">Start Game</button>
+        </form>
+        <p id="text"></p>
+      </div>
+      <div class="bottom-edge"></div>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

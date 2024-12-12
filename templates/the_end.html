@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RamJet</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  
+</head>
+<body style="background-image: url('/static/images/end.png');">
+  <div class="container">
+    <div class="papyrus">
+      <div class="top-edge"></div>
+      <div class="content">
+        <h1>   The RamJet, ready to conquer the stars!      </h1>
+        <p id="text"></p>
+      </div>
+      <div class="bottom-edge"></div>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
