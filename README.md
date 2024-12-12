@@ -3,6 +3,8 @@ The Software 2 project for Metropolia UAS.
 
 How to run the game:
 
+Download as ZIP
+
 load ramjet_db.sql into MariaDB
 
 change the .env file to your own user/pass (create a new user in case root doesn't work)
